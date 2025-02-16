@@ -1,0 +1,270 @@
+/* Estilo acadêmico, moderno e responsivo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f9; /* Fundo claro acadêmico */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #ffffff; /* Fundo branco para leitura confortável */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Cor escura e acadêmica */
+    font-weight: 600;
+}
+
+.question {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 15px;
+    border-radius: 5px;
+    background: #f8f9fa; /* Fundo leve para separação das perguntas */
+    border-left: 5px solid #3498db; /* Destaque azul acadêmico */
+}
+
+.question label {
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background: #3498db; /* Azul acadêmico */
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Estilização das respostas corretas e incorretas */
+.correct-answer {
+    background-color: rgba(46, 204, 113, 0.9) !important; /* Verde elegante */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    border-left: 5px solid #27ae60;
+}
+
+.incorrect-answer {
+    background-color: rgba(231, 76, 60, 0.9) !important; /* Vermelho acadêmico */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    border-left: 5px solid #c0392b;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .question label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .question {
+        padding: 10px;
+    }
+
+    .question label {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+/* Estilização aprimorada para a exibição do resultado */
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Título do resultado */
+#resultado h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Mensagem de nota */
+.result-score {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Mensagem de aprovação */
+.pass-message {
+    color: #155724;
+    background: #d4edda;
+    border-left: 5px solid #28a745;
+}
+
+/* Mensagem de reprovação */
+.fail-message {
+    color: #721c24;
+    background: #f8d7da;
+    border-left: 5px solid #dc3545;
+}
+
+/* Estilização para cada questão */
+.correct {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #155724;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    border-left: 4px solid #28a745;
+    margin-bottom: 8px;
+}
+
+.incorrect {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #721c24;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    border-left: 4px solid #dc3545;
+    margin-bottom: 8px;
+}
+
+/* Mensagem final de APROVADO ou REPROVADO */
+.final-message {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Cores diferenciadas para mensagem final */
+.approved {
+    color: #fff;
+    background: #28a745;
+    border-left: 6px solid #1e7e34;
+}
+
+.failed {
+    color: #fff;
+    background: #dc3545;
+    border-left: 6px solid #721c24;
+}
+/* Estilização do alerta customizado */
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ff4d4d;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+    z-index: 1000;
+    width: 300px;
+}
+
+.custom-alert button {
+    background: white;
+    color: #ff4d4d;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-alert button:hover {
+    background: #f8f8f8;
+}

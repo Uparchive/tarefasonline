@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Fundamentos da Liderança</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="customAlert" class="custom-alert">
+        Por favor, responda todas as perguntas antes de enviar.
+        <br>
+        <button onclick="closeCustomAlert()">OK</button>
+    </div>    
+    <div class="container">
+        <h1>Exercício do 1º Módulo - Fundamentos da Liderança</h1>
+        <form id="exercicioForm">
+            <div class="question">
+                <label>1. O que diferencia um líder de um chefe?</label><br>
+                <input type="radio" name="q1" value="a"> A) O líder inspira, o chefe apenas manda.<br>
+                <input type="radio" name="q1" value="b"> B) O chefe motiva mais do que um líder.<br>
+                <input type="radio" name="q1" value="c"> C) O líder não se importa com a equipe.<br>
+                <input type="radio" name="q1" value="d"> D) Ambos são iguais.<br>
+            </div>
+            <div class="question">
+                <label>2. Qual é a principal característica da inteligência emocional?</label><br>
+                <input type="radio" name="q2" value="a"> A) Controle das emoções e empatia.<br>
+                <input type="radio" name="q2" value="b"> B) Evitar qualquer interação social.<br>
+                <input type="radio" name="q2" value="c"> C) Ter respostas emocionais exageradas.<br>
+                <input type="radio" name="q2" value="d"> D) Ignorar os sentimentos da equipe.<br>
+            </div>
+            <div class="question">
+                <label>3. Qual das seguintes opções é essencial para uma boa comunicação na liderança?</label><br>
+                <input type="radio" name="q3" value="a"> A) Falar mais alto para impor autoridade.<br>
+                <input type="radio" name="q3" value="b"> B) Ser claro, objetivo e saber ouvir.<br>
+                <input type="radio" name="q3" value="c"> C) Usar linguagem técnica para mostrar superioridade.<br>
+                <input type="radio" name="q3" value="d"> D) Evitar interações frequentes com a equipe.<br>
+            </div>
+            <div class="question">
+                <label>4. O que um líder deve fazer para motivar sua equipe?</label><br>
+                <input type="radio" name="q4" value="a"> A) Criar um ambiente tóxico para competição.<br>
+                <input type="radio" name="q4" value="b"> B) Oferecer feedbacks construtivos e reconhecimento.<br>
+                <input type="radio" name="q4" value="c"> C) Impor regras rígidas sem comunicação.<br>
+                <input type="radio" name="q4" value="d"> D) Centralizar todas as decisões.<br>
+            </div>
+            <div class="question">
+                <label>5. Como um líder pode incentivar a autonomia dos colaboradores?</label><br>
+                <input type="radio" name="q5" value="a"> A) Delegando responsabilidades e confiando na equipe.<br>
+                <input type="radio" name="q5" value="b"> B) Controlando todas as tarefas de perto.<br>
+                <input type="radio" name="q5" value="c"> C) Evitando dar espaço para a equipe tomar decisões.<br>
+                <input type="radio" name="q5" value="d"> D) Apenas elogiando, sem delegar tarefas.<br>
+            </div>
+            <div class="question">
+                <label>6. Qual dessas opções representa um líder eficaz?</label><br>
+                <input type="radio" name="q6" value="a"> A) Um gestor autoritário que impõe decisões.<br>
+                <input type="radio" name="q6" value="b"> B) Alguém que inspira, motiva e dá suporte à equipe.<br>
+                <input type="radio" name="q6" value="c"> C) Um chefe que evita interações com funcionários.<br>
+                <input type="radio" name="q6" value="d"> D) Alguém que centraliza todo o trabalho.<br>
+            </div>
+            <div class="question">
+                <label>7. Como um líder pode promover um ambiente de trabalho positivo?</label><br>
+                <input type="radio" name="q7" value="a"> A) Incentivando a comunicação e colaboração.<br>
+                <input type="radio" name="q7" value="b"> B) Criando regras rígidas sem participação da equipe.<br>
+                <input type="radio" name="q7" value="c"> C) Evitando dar feedbacks.<br>
+                <input type="radio" name="q7" value="d"> D) Mantendo a equipe sob pressão constante.<br>
+            </div>
+            <button type="submit">Enviar Respostas</button>
+            <button type="button" id="resetButton">🔄 Reiniciar Tarefa</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
